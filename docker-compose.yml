@@ -22,7 +22,7 @@ services:
     links:
       - nextcloud-db
     volumes:
-      - nextcloud:/var/www/html
+      - /mnt/home/nextcloud:/var/www/html
     env_file:
       - .env
     environment:
@@ -41,8 +41,4 @@ services:
 
 networks:
   traefik:
-    external: true
-
-volumes:
-  nextcloud:
     external: true
