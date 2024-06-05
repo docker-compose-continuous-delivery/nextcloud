@@ -3,7 +3,7 @@ version: "3.9"
 services:
   nextcloud:
     image: 'nextcloud/all-in-one:latest'
-    container_name: nextcloud
+    container_name: nextcloud-aio-mastercontainer
     restart: unless-stopped
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock:ro'
