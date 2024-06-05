@@ -3,4 +3,4 @@ docker volume create \
   --opt type=nfs \
   --opt o=addr=192.168.1.126,nolock,soft,rw \
   --opt device=":/mnt/user/Home/nextcloud" \
-  transfer-sh
+  nextcloud
