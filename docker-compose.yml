@@ -17,7 +17,7 @@ services:
       - "traefik.enable=false"
 
   app:
-    image: nextcloud
+    image: nextcloud:stable-apache
     restart: unless-stopped
     links:
       - nextcloud-db
